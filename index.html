@@ -14,26 +14,76 @@
 </head>
 
 <body>
+    <!--==================== Start Header avec la navbar ======================-->
     <header>
         <div id="menu" class="fa fa-diamond"></div>
-        <a href="#" class="logo"><img src="images/logo_jameela.png" alt="logo" height="100" width="100"></a>
+        <a href="#" class="logo"><img src="assets/img/logo_jameela.png" alt="logo" height="100" width="100"></a>
         <nav class="navbar">
-            <a href="#home">Accueil</a>
-            <a href="#beauty">Beauty</a>
-            <a href="#tote-bags">Tote bags</a>
-            <a href="#sunglasses">Sunglasses</a>
-            <a href="#swimsuites">Swimsuits</a>
+            <a href="index.html">Accueil</a>
+            <a href="beauty.html">Beauty</a>
+            <a href="tote-bags.html">Tote bags</a>
+            <a href="Sunglasses.html">Sunglasses</a>
+            <a href="swimsuits.html">Swimsuits</a>
         </nav>
         <div class="icons">
             <i class="fa fa-search" id="search-icon"></i>
             <i class="fa fa-user-circle-o icon"></i>
-            <i class="fa fa-cart-plus icon"></i>
+            <i class="fa fa-cart-plus icon" data-toggle="modal" data-target="#cart">(<span
+                    class="total-count"></span>)</i>
         </div>
         <form id="search-box">
             <input type="search" id="search" placeholder="Search here">
             <label for="search" class="fa fa-search" style="font-size:20px"></label>
         </form>
     </header>
+    <!--==================== End Header avec la navbar ======================-->
+    <!--==================== End Header avec la navbar ======================-->
+    <!--====================== Start login and sing in =======================-->
+    <div class="form">
+        <!-- login -->
+        <div class="login-form">
+            <!-- cancel btn -->
+            <a href="#" class="form-cancel">
+                <i class="fa fa-times"></i>
+            </a>
+            <!-- heading! -->
+            <strong>Log In</strong>
+            <!-- Inputs -->
+            <form>
+                <input type="email" placeholder="Exemple@gmail.com" name="email" required>
+                <input type="password" placeholder="Mot de passe" name="password" required>
+                <!-- submit btn -->
+                <input type="submit" value="Log In">
+            </form>
+            <!-- forget and sing up btn -->
+            <div class="form-btns">
+                <a href="#" class="forget">Mot de passe oublié?</a>
+                <a href="#" class="sign-up-btn">Creer un compte</a>
+            </div>
+        </div>
+        <!-- Sing Up -->
+        <div class="sign-up-form">
+            <!-- cancel btn -->
+            <a href="#" class="form-cancel">
+                <i class="fa fa-times"></i>
+            </a>
+            <!-- heading! -->
+            <strong>Sign Up</strong>
+            <!-- Inputs -->
+            <form>
+                <input type="text" placeholder="Nom et Prénom" name="fullName" required>
+                <input type="email" placeholder="Exemple@gmail.com" name="email" required>
+                <input type="password" placeholder="Mot de passe" name="password" required>
+                <!-- submit btn -->
+                <input type="submit" value="Sing Up">
+            </form>
+            <!-- forget and sign up btn -->
+            <div class="form-btns">
+                <a href="#" class="Already-acount">Avez-vous déjà un compte?</a>
+            </div>
+        </div>
+    </div>
+    <!--=================== End log in and sing in  form ================-->
     <!-- banniere -->
     <section id="hero" class="d-flex align-items-center pt-5">
         <div class="container text-center position-relative">
@@ -42,29 +92,29 @@
             <a href="#beauty" class="btn-get-started scrollto">Découvrir</a>
         </div>
     </section>
+    <!-- images patchwork -->
     <div class="container-fluide">
-        <!-- images patchwork -->
         <div class="row">
             <div class="col-sm-8 p-0">
-                <img src="images/sunglasses.jpeg" class="img-fluid"
+                <img src="assets/img/sunglasses.jpeg" class="img-fluid"
                     alt="photo d'une femme aux cheveux bleu avec lunette de soleil">
             </div>
             <div class="col-sm-4 p-0">
-                <img src="images/totebage.jpeg" class="img-fluid"
+                <img src="assets/img/totebage.jpeg" class="img-fluid"
                     alt=" photo d'une plante dans un tote bag avec impression">
             </div>
             <div class="col-sm-4 p-0">
-                <img src="images/swimsuits.jpeg" class="img-fluid"
+                <img src="assets/img/swimsuits.jpeg" class="img-fluid"
                     alt="photo d'une femme en maillot de bain dans une cascade">
             </div>
             <div class="col-sm-8 p-0">
-                <img src="images/beauty-product.jpg" class="img-fluid" alt="photo de produits de beauté">
+                <img src="assets/img/beauty-product.jpg" class="img-fluid" alt="photo de produits de beauté">
             </div>
         </div>
         <!-- qui sommes-nous? -->
         <div class="row py-5">
             <div class="col-sm-12 col-md-5 d-flex justify-content-center p-5">
-                <img src="images/logo_jameela.png" class="img-fluid" width="300" alt="logo-jameela">
+                <img src="assets/img/logo_jameela.png" class="img-fluid" width="300" alt="logo-jameela">
             </div>
             <div class="col-sm-12 col-md-7 p-5 text-center">
                 <h2>Qui sommes nous?</h2>
@@ -75,45 +125,87 @@
                     aux États-Unis, et en Allemagne, dans des concept stores amoureux des marques françaises.</p>
             </div>
         </div>
-        <div class="row pb-1">
-            <div class="col-sm-4 pb-5 text-center ">
-                <h3 class="pb-4">News Letter</h3>
-                <form action="" method="post">
-                    <input type="text" placeholder="exemple@gmail.com">
-                    <button type="button" class="btn btn-outline-dark">s'inscrire</button>
-                </form>
-            </div>
-            <div class="col-sm-4 col-md-4 pb-5 text-center">
-                <h3 class="pb-4">Contact</h3>
-                <i class="fa fa-youtube-play" style="font-size:36px"></i>
-                <i class="fa fa-facebook" style="font-size:36px"></i>
-                <i class="fa fa-instagram" style="font-size:36px"></i>
-                <i class="fa fa-twitter" style="font-size:36px"></i>
-            </div>
-            <div class="col-sm-4 col-md-4">
-                <h3 class="text-center pb-3">Service Client</h3>
-                <div class="service">
-                    <p>Question?</p>
-                    <p>Mon compte</p>
-                    <p>Terms et conditions</p>
-                    <p>Information de livraisons</p>
+        <!-- Termes & Conditions -->
+        <div class="container my-5 py-4">
+            <div class="about-text p-5 border text-center">
+                <h2 class="animate__animated animate__bounce">Suivez-nous !</h2>
+                <hr>
+                <img src="assets/img/tooooote.gif" class="img-tot py-4" alt="">
+                <div class="about-text  text-center">
+                    <div class="row pb-1">
+                        <div class="col-sm-4 pb-5 text-center ">
+                            <h3 class="pb-4 animate__animated animate__bounce">Newsletter</h3>
+                            <form action="" method="post">
+                                <input type="text" placeholder="exemple@gmail.com">
+                                <button type="button" class="btn btn-outline-dark ">s'inscrire</button>
+                            </form>
+                        </div>
+                        <div class="col-sm-4 col-md-4 pb-5 text-center">
+                            <h3 class="pb-4 animate__animated animate__bounce">Contact</h3>
+                            <i class="fa fa-youtube-play" style="font-size:30px"></i>
+                            <i class="fa fa-facebook" style="font-size:30px"></i>
+                            <i class="fa fa-instagram" style="font-size:30px"></i>
+                            <i class="fa fa-twitter" style="font-size:30px"></i>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <h3 class="text-center pb-2 align-content-center animate__animated animate__bounce">Service
+                                Client
+                            </h3>
+                            <div class="service text-center">
+                                <p>Question?</p>
+                                <p>Mon compte</p>
+                                <p>Termes et conditions</p>
+                                <p>Information de livraisons</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="footer py-2">
-        <p class="text-dark text-center">Copyright © Jameela 2021</p>
-    </footer>
+        <footer class="footer py-2">
+            <p class="text-dark text-center">Copyright © Jameela 2021</p>
+        </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Votre panier</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table">
+                        </table>
+                        <div>Prix Total: <span class="total-cart"></span> €</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Commander</button>
+                        <button class="clear-cart btn btn-danger">Vider le Panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-        </script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+            </script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
         integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
         crossorigin="anonymous"></script> -->
-    <script src="main.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
 
 </body>
 

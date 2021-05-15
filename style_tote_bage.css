@@ -1,0 +1,256 @@
+/* POLICES */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@font-face {
+  font-family: "Chillax-Semibold";
+  src: url(assets/fonts/Chillax-Semibold.ttf) format("truetype"),
+      url(typo/Chillax-Semibold.woff) format('woff2'),
+      url(typo/Chillax-Semibold.woff2) format('woff');
+}
+@font-face {
+  font-family: "Chillax-Regular";
+  src: url(assets/fonts/Chillax-Regular.ttf) format("truetype"),
+      url(assets/fonts/Chillax-Regular.woff) format('woff2'),
+      url(assets/fonts/Chillax-Regular.woff2) format('woff');
+}
+@font-face {
+  font-family: "Chillax-Medium";
+  src: url(assets/fonts/Chillax-Medium.ttf) format("truetype"),
+      url(assets/fonts/Chillax-Medium.woff) format('woff2'),
+      url(assets/fonts/Chillax-Medium.woff2) format('woff');
+}
+@font-face {
+  font-family: "Chillax-Light";
+  src: url(assets/fonts/Chillax-Light.ttf) format("truetype"),
+      url(assets/fonts/Chillax-Light.woff) format('woff2'),
+      url(assets/fonts/Chillax-Light.woff2) format('woff');
+}
+
+/* SCROLLBAR */ 
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+html::-webkit-scrollbar-track{
+  background: #333;
+}
+html::-webkit-scrollbar-thumb{
+  background:#f8efe9;
+  border-radius: 10%;
+}
+
+/* GENERAL */
+body{
+  height: 300rem;
+}
+
+hr {
+  height: 4px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: peachpuff;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 0;
+}
+
+h2, h3, p, li{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-text, .card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+}
+
+/* .zoom {      
+  -webkit-transition: all 0.35s ease-in-out;    
+  -moz-transition: all 0.35s ease-in-out;    
+  transition: all 0.35s ease-in-out;     
+  cursor: -webkit-zoom-in;      
+  cursor: -moz-zoom-in;      
+  cursor: zoom-in;  
+  }     
+  
+  .zoom:hover,  
+  .zoom:active,   
+  .zoom:focus {
+  /**adjust scale to desired size, 
+  add browser prefixes**/
+  /* -ms-transform: scale(2.5);    
+  -moz-transform: scale(2.5);  
+  -webkit-transform: scale(2.5);  
+  -o-transform: scale(2.5);  
+  transform: scale(2.5);    
+  position:relative;      
+  z-index:100;  
+  } */
+
+
+/* Header */
+
+header.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header{
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  position: relative;
+  font-family: "Chillax-Regular", sans-serif;
+  z-index: 1;
+}
+#search-box{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: rgb(216, 226, 220);
+  padding: 2rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+}
+#search-box.active{
+  transform: scaleY(1);
+  opacity: 1;
+}
+#search-box #search{
+  width: 100%;
+  padding: 12px;
+  text-transform: none;
+  font-size: 1rem;
+}
+#search-box #search::placeholder{
+  text-transform: capitalize;
+}
+#search-box label{
+  color: #333;
+  cursor: pointer;
+  padding-left: 2rem;
+}
+
+header .navbar a{
+  color: #333;
+  font-size: 1.7rem;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+header .navbar a:hover{
+  color: rgb(216, 226, 220);
+}
+
+header .icons i, header .icons a{
+  font-size: 2rem;
+  color: #333;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+header .icons i:hover, header .icons a:hover{
+  color: rgb(216, 226, 220);
+}
+
+.fa-times{
+  transform:rotate(-360deg);
+}
+
+#menu{
+  font-size: 3rem;
+  color: #333;
+  display: none;
+  cursor: pointer;
+}
+
+/* COLLECTION LIST */
+
+.show-cart li {
+  display: flex;
+} 
+.card {
+  margin-bottom: 20px;
+  margin-left: 30px;
+  background-color: whitesmoke;;
+}
+.card-img-top {
+  margin-top: 40px;
+  width: 250px;
+  height: 250px;
+  align-self: center;
+} 
+
+/* Bas de page */
+.service{
+  font-size: 10px;
+  line-height: 6px;
+}
+/* footer */
+  footer{
+  background-color:  #e8e8e4ff;
+}
+
+/* Media queries */
+@media (max-width:991px){
+  html{
+      font-size: 55%;
+  }
+  header .navbar{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 1000;
+      padding: 2rem;
+      border-top: .1rem solid rgba(0,0,0,.1);
+      transform-origin: top;
+      transform: scaleY(0);
+      opacity: 0;
+  }
+  header .navbar a{
+      font-size: 2rem;
+      padding:1.5rem;
+  }
+  header .navbar.nav-toggle{
+    background-color: rgba(216, 226, 220, 0.8);
+      transform: scaleY(1);
+      opacity: 1;
+  }
+  #menu{
+      display: block;
+  }
+}
+
+@media (max-width: 736px) {
+  .card-img-top {
+    width: 80vh;
+    height: 80vh; 
+      }
+}
+
+
+@media (max-width: 1024px) {
+  .card-img-top {
+    width: 80px;
+    height: 80px;
+
+  }
+}
+
+@media (max-width: 736px) {
+  .img-tot {
+    width: 180px;
+    height: 180px;
+  }
+}
