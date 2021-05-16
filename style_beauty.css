@@ -29,7 +29,7 @@
     transition: all .2s;
 }
 html{
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     scroll-behavior: smooth;
     overflow-x: hidden;
 }

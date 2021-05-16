@@ -45,47 +45,46 @@ $(document).on('click', '.form-cancel', function () {
 
 //=============== Login-sign-up-form ======================
 
-// $('.small-image img').click(function () {
-//   var img = $(this).attr('src');
-//   $('.big-img img').attr('src', img);
-// });
-// $('#zoom').imagezoomsl({
-//   zoomrange: [4, 4]
-// });
+$('.small-image img').click(function () {
+  var img = $(this).attr('src');
+  $('.big-img img').attr('src', img);
+});
+$('#zoom').imagezoomsl({
+  zoomrange: [4, 4]
+});
 
+$('.small img').click(function () {
+  var img = $(this).attr('src');
+  $('.hair img').attr('src', img);
+});
 
-// $('.small img').click(function () {
-//   var img = $(this).attr('src');
-//   $('.hair img').attr('src', img);
-// });
+$('#zoom1').imagezoomsl({
+  zoomrange: [4, 4]
+});
 
-// $('#zoom1').imagezoomsl({
-//   zoomrange: [4, 4]
-// });
+$('.sm-img img').click(function () {
+  var img = $(this).attr('src');
+  $('.hydratation img').attr('src', img);
+});
+$('#zoom2').imagezoomsl({
+  zoomrange: [4, 4]
+});
 
-// $('.sm-img img').click(function () {
-//   var img = $(this).attr('src');
-//   $('.hydratation img').attr('src', img);
-// });
-// $('#zoom2').imagezoomsl({
-//   zoomrange: [4, 4]
-// });
+$('.pic img').click(function () {
+  var img = $(this).attr('src');
+  $('.big img').attr('src', img);
+});
+$('#zoom3').imagezoomsl({
+  zoomrange: [4, 4]
+});
 
-// $('.pic img').click(function () {
-//   var img = $(this).attr('src');
-//   $('.big img').attr('src', img);
-// });
-// $('#zoom3').imagezoomsl({
-//   zoomrange: [4, 4]
-// });
-
-// $('.pics img').click(function () {
-//   var img = $(this).attr('src');
-//   $('.picture img').attr('src', img);
-// });
-// $('#zoom4').imagezoomsl({
-//   zoomrange: [4, 4]
-// });
+$('.pics img').click(function () {
+  var img = $(this).attr('src');
+  $('.picture img').attr('src', img);
+});
+$('#zoom4').imagezoomsl({
+  zoomrange: [4, 4]
+});
 
 
 

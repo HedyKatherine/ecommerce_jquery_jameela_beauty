@@ -317,6 +317,10 @@ header .icons i:hover, header .icons a:hover{
     font-size: 10px;
     line-height: 6px;
 }
+.img-follow {
+    width: 400px;
+    height: auto; 
+}
 /* footer */
     footer{
     background-color:  #e8e8e4ff ;
@@ -340,8 +344,8 @@ header .icons i:hover, header .icons a:hover{
     }
 }
 @media (max-width: 736px) {
-  .img-tot {
-    width: 180px;
-    height: 180px;
-  }
+.img-follow {
+    width: 250px;
+    height: auto;
+}
 }
