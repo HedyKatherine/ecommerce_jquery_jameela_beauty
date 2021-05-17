@@ -8,20 +8,22 @@
     <title>Jameela website (e-commerce) page Beauty</title>
     <!-- Lien pour les font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alata|Josefin+Sans|Maven+Pro&display=swap" rel="stylesheet">
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <!-- CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Jq ui pour l autocomplete -->
-    <link rel="stylesheet" href="jq-ui.css">
+    <link rel="stylesheet" href="assets/css/jq-ui.css">
 </head>
 
 <body>
     <!--==================== Start Header avec la navbar ======================-->
     <header>
         <div id="menu" class="fa fa-diamond"></div>
-        <a href="#" class="logo"><img src="assets/img/logo_jameela.png" src="" alt="logo" height="100" width="auto"></a>
+        <a href="#" class="logo"><img src="assets/img/Acceuil/logo_jameela.png" src="" alt="logo" height="100"
+                width="auto"></a>
         <nav class="navbar">
             <a href="index.html">Accueil</a>
             <a href="beauty.html">Beauty</a>
@@ -36,7 +38,6 @@
             <i class="fa fa-cart-plus icon" data-toggle="modal" data-target="#cart">(<span
                     class="total-count"></span>)</i>
         </div>
-
         </div>
         <form id="search-box">
             <input type="search" id="search" placeholder="Search here">
@@ -91,7 +92,7 @@
     </div>
     <!--=================== End log in and sing in  form ================-->
 
-    <!-- banniere -->
+    <!-- banniere image -->
     <section id="hero" class="d-flex align-items-center pt-5">
         <div class="container text-center position-relative">
             <h1>Jameela</h1>
@@ -99,21 +100,161 @@
             <a href="#beauty" class="btn-get-started scrollto">Découvrir</a>
         </div>
     </section>
+    <!-- produits -->
+    <div id="portfolio" class="text-center paddsection">
+        <div class="section-title text-center">
+            <h2>Nos produits</h2><br>
+        </div>
+        <div class="portfolio-container" id="card">
+            <div class="row pb-4">
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/lunette_Simone.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Lunette de soleil Simone</h4>
+                        <a href="Sunglasses.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail all ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/annisa-ica-U6CAOHNDvO4-unsplash.jpg" alt="Avatar"
+                            class="img-fluid pb-2">
+                        <h4>Sac Annisa</h4>
+                        <a href="tote-bags.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/tot2.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Sac The Librarian</h4>
+                        <a href="tote-bags.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/maillot-bleu.jpg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Maillot de bain</h4>
+                        <a href="swimsuits.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/lunette_Rebecca.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Lunette de soleil Rebecca</h4>
+                        <a href="Sunglasses.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/maillot-noir-final.jpg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Maillot de bain</h4>
+                        <a href="swimsuits.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/anna-elizabeth-yiLlxHbhx0E-unsplash 2.jpg" alt="Avatar"
+                            class="img-fluid pb-2">
+                        <h4>Sac The Sorority</h4>
+                        <a href="tote-bags.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/argan-bio.png" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Sérum bio pour les cheveux</h4>
+                        <a href="beauty.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/lunette_Katty.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Lunette de soleil Katty</h4>
+                        <a href="Sunglasses.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/maillot-lacets-verts.jpg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Maillot de bain</h4>
+                        <a href="swimsuits.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/hamma-products.jpg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Pack d'argan Hammam</h4>
+                        <a href="beauty.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/Lunette_Rebecca2.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Lunettes</h4>
+                        <a href="Sunglasses.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/vitamenE.jpg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Argan medical Vitamine E</h4>
+                        <a href="beauty.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/lunette_Louise.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Lunette de soleil Louise</h4>
+                        <a href="Sunglasses.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/maillot-blanc-lacets.jpg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Maillot de bain</h4>
+                        <a href="swimsuits.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/i92853-.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4> Huile d'argan pour massage</h4>
+                        <a href="beauty.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- images patchwork -->
     <div class="container-fluide">
-        <img src="assets/img/patchwork.jpg" class="img-fluid" alt="patchwork d'images">
-
+        <img src="assets/img/Acceuil/patchwork.jpg" class="img-fluid" alt="patchwork d'images">
     </div>
     <!-- qui sommes-nous? -->
     <section>
         <div class="container">
-            <div class="row py-5">
-                <div class="col-sm-12 col-md-5 d-flex justify-content-center p-5">
-                    <img src="assets/img/logo_jameela.png" class="img-fluid" width="300" alt="logo-jameela">
+            <div class="row pt-2">
+                <div class="col-sm-12 col-md-5 d-flex justify-content-center pt-5">
+                    <img src="assets/img/Acceuil/logo_jameela.png" class="img-fluid" width="300" alt="logo-jameela">
                 </div>
                 <div class="col-sm-12 col-md-7 p-5 text-center">
                     <h2>Qui sommes nous?</h2>
-                    <p class="text-justify p-3">Jameela est une marque française créée en 2021 qui propose des produits
+                    <p class="text-justify pt-3">Jameela est une marque française créée en 2021 qui propose des produits
                         de beautés naturels, ainsi qu'une ligne de lunettes de soleil, de tote Bag et de maillots de
                         bains,made in France. Nous travaillons en collaboration avec des artisans engagés afin de
                         satifaire l'exigence de notre clientèle. Nos articles sont distribués en France, au Japon, en
@@ -130,7 +271,7 @@
             <div class="about-text p-5 border text-center">
                 <h2 class="animate__animated animate__bounce">Suivez-nous !</h2>
                 <hr>
-                <img src="assets/img/nature.gif" class="img-follow py-4" alt="">
+                <img src="assets/img/Acceuil/nature.gif" class="img-follow py-4" alt="">
                 <div class="about-text  text-center">
                     <div class="row pb-1">
                         <div class="col-sm-4 pb-5 text-center ">
@@ -207,10 +348,10 @@
     <!-- pour l autocomplete -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- pour le zoom des photos -->
-    <script src="zoomsl.min.js"></script>
+    <script src="assets/js/zoomsl.min.js"></script>
     <!-- le main js de ma page -->
-    <script src="main.js"></script>
-    <script src="script.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
