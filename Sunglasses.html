@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jameela website (e-commerce) page Sunglasses</title>
+    <!-- Lien pour les font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <!-- Lien pour les font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS file -->
     <link rel="stylesheet" href="style_Sunglasses.css">
     <!-- Jq ui pour l autocomplete -->
@@ -95,17 +95,19 @@
 
     <!--======================== Section Produits =======================-->
     <!-- image banniére -->
-    <section class="bg">
+    <section class="bg align-items-center py-5">
         <div class="container text-center position-relative">
-            <h1>DECOUVRER NOTRE COLLECTION DE LUNETTE DE SOLEIL</h1>
+            <h1>Sunglasses</h1>
+            <h2>Collection 2021</h2>
+            <a href="#betty" class="btn-get-started scrollto"><i class="fa fa-sun-o" style="font-size:40px"></i></a>
         </div>
     </section>
     <!-- produits betty -->
     <div class="container">
         <div class="row">
-            <div class="card col-sm-12 text-center py-5 Betty">
+            <div class="card col-sm-12 text-center py-5 Betty" id="betty">
                 <img src="assets/img/lunette_Betty.jpeg" class="img-fluid card-img-top"
-                    style="width: 900px; height: auto;" alt="">
+                    style="width: 900px; height: auto;" alt="lunette de soleil model Betty entre les mains d'une femme">
                 <div class="card-block">
                     <h2 class="card-title py-2">Lunette de soleil Betty</h2>
                     <p class="card-text">150€</p>
@@ -140,7 +142,8 @@
                                 <li>ACCESSOIRES INCLUS : Etui</li>
                             </ul>
                             <p>Fabrication française.</p>
-                            <img src="assets/img/lunette_Betty.jpeg" class="img-fluid" alt="">
+                            <img src="assets/img/lunette_Betty.jpeg" class="img-fluid"
+                                alt="lunette de soleil model Betty entre les mains d'une femme">
                         </div>
                     </div>
                 </div>
@@ -148,7 +151,7 @@
             <!-- produits Rebecca -->
             <div class="card col-sm-12 col-lg-8 text-center py-5 Rebecca">
                 <img src="assets/img/lunette_Rebecca.jpeg" class="img-fluid card-img-top"
-                    style="width: 500px; height: auto;" alt="">
+                    style="width: 500px; height: auto;" alt="lunette de soleil model Rebecca sur pile de livre">
                 <div class="card-block">
                     <h2 class="card-title py-2">Lunette de soleil Rebecca</h2>
                     <p class="card-text">120€</p>
@@ -158,32 +161,33 @@
                         Details</a>
                 </div>
             </div>
-            <!-- Modal Rebbecca-->
-            <div class="modal fade" id="ModalRebecca" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            <!-- Modal Rebecca-->
+            <div class="modal fade" id="ModalRebecca" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Lunette de soleil Betty</h5>
+                            <h5 class="modal-title" id="exampleModalLabel1">Lunette de soleil Rebecca</h5>
                             <button type="button" class="close btn btn-outline-secondary" data-dismiss="modal"
                                 aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p>Opter pour un style pin up! </p>
-                            <p>Vous serez séduit par cette forme rétro aux lignes douces,
-                                aux tons lumineux sable avec ses finitions métal</p>
+                            <p>Opter pour un style classique! </p>
+                            <p>Vous n'allez plus pouvoir vous passer de cette paire de lunette de soleil Rebecca
+                                moderne et chic. La petite touche incontournable de plus à votre style.</p>
                             <ul>
-                                <li>FORME : Pilote</li>
-                                <li>COULEUR DE MONTURE : Sable </li>
-                                <li>MATÉRIAU DE MONTURE : Métal</li>
+                                <li>FORME : Classique</li>
+                                <li>COULEUR DE MONTURE : Brillant Havane </li>
+                                <li>MATÉRIAU DE MONTURE : Nylon</li>
                                 <li>COULEUR DES VERRES : Fumé marron</li>
                                 <li>TRAITEMENT DES VERRES : Classique</li>
                                 <li>ACCESSOIRES INCLUS : Etui</li>
                             </ul>
                             <p>Fabrication française.</p>
-                            <img src="assets/img/lunette_Betty.jpeg" class="img-fluid" alt="">
+                            <img src="assets/img/Lunette_Rebecca2.jpeg" class="img-fluid"
+                                alt="lunette de soleil model Rebecca fond blanc">
                         </div>
                     </div>
                 </div>
@@ -191,7 +195,7 @@
             <!-- produits Louise -->
             <div class="card col-sm-12 col-lg-4 text-center py-5 Louise">
                 <img src="assets/img/lunette_Louise.jpeg" class="img-fluid card-img-top"
-                    style="width: 500px; height: auto;" alt="">
+                    style="width: 500px; height: auto;" alt="lunette de soleil model Louise sur une table">
                 <div class="card-block">
                     <h2 class="card-title py-2">Lunette de soleil Louise</h2>
                     <p class="card-text">160€</p>
@@ -202,31 +206,32 @@
                 </div>
             </div>
             <!-- Modal Louise-->
-            <div class="modal fade" id="ModalLouise" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="ModalLouise" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Lunette de soleil Betty</h5>
+                            <h5 class="modal-title" id="exampleModalLabel2">Lunette de soleil Louise</h5>
                             <button type="button" class="close btn btn-outline-secondary" data-dismiss="modal"
                                 aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p>Opter pour un style pin up! </p>
-                            <p>Vous serez séduit par cette forme rétro aux lignes douces,
-                                aux tons lumineux sable avec ses finitions métal</p>
+                            <p>Opter pour un style détendu! </p>
+                            <p>Faciles à associer à tous vos looks! Privilégier son confort absolu, sans vous souciez de
+                                votre style.</p>
                             <ul>
                                 <li>FORME : Pilote</li>
-                                <li>COULEUR DE MONTURE : Sable </li>
-                                <li>MATÉRIAU DE MONTURE : Métal</li>
-                                <li>COULEUR DES VERRES : Fumé marron</li>
+                                <li>COULEUR DE MONTURE : Noir </li>
+                                <li>MATÉRIAU DE MONTURE : Nylon</li>
+                                <li>COULEUR DES VERRES : noir</li>
                                 <li>TRAITEMENT DES VERRES : Classique</li>
                                 <li>ACCESSOIRES INCLUS : Etui</li>
                             </ul>
                             <p>Fabrication française.</p>
-                            <img src="assets/img/lunette_Betty.jpeg" class="img-fluid" alt="">
+                            <img src="assets/img/lunette_Louise2.jpeg" class="img-fluid"
+                                alt="lunette de soleil model Louise fond blanc">
                         </div>
                     </div>
                 </div>
@@ -234,7 +239,7 @@
             <!-- produits Katty -->
             <div class="card col-sm-12 col-lg-6 text-center py-5 Katty">
                 <img src="assets/img/lunette_Katty.jpeg" class="img-fluid card-img-top"
-                    style="width: 500px; height: auto;" alt="">
+                    style="width: 500px; height: auto;" alt="lunette de soleil model Katty posé dans le sable">
                 <div class="card-block">
                     <h2 class="card-title py-2">Lunette de soleil Katty</h2>
                     <p class="card-text">140€</p>
@@ -246,31 +251,32 @@
                 </div>
             </div>
             <!-- Modal Katty-->
-            <div class="modal fade" id="ModalKatty" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="ModalKatty" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Lunette de soleil Betty</h5>
+                            <h5 class="modal-title" id="exampleModalLabel3">Lunette de soleil Katty</h5>
                             <button type="button" class="close btn btn-outline-secondary" data-dismiss="modal"
                                 aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p>Opter pour un style pin up! </p>
-                            <p>Vous serez séduit par cette forme rétro aux lignes douces,
-                                aux tons lumineux sable avec ses finitions métal</p>
+                            <p>Briller par votre personnalité! </p>
+                            <p>Affichez fièrement votre look avec cette paire de lunette de soleil au style arrondi.
+                                Vous allez faire sensation</p>
                             <ul>
-                                <li>FORME : Pilote</li>
-                                <li>COULEUR DE MONTURE : Sable </li>
-                                <li>MATÉRIAU DE MONTURE : Métal</li>
-                                <li>COULEUR DES VERRES : Fumé marron</li>
+                                <li>FORME : Ronde</li>
+                                <li>COULEUR DE MONTURE : Brillant Noir </li>
+                                <li>MATÉRIAU DE MONTURE : Nylonl</li>
+                                <li>COULEUR DES VERRES : Noir</li>
                                 <li>TRAITEMENT DES VERRES : Classique</li>
                                 <li>ACCESSOIRES INCLUS : Etui</li>
                             </ul>
                             <p>Fabrication française.</p>
-                            <img src="assets/img/lunette_Betty.jpeg" class="img-fluid" alt="">
+                            <img src="assets/img/Lunette_Katty2.jpeg" class="img-fluid"
+                                alt="lunette de soleil model Katty sur fond blanc">
                         </div>
                     </div>
                 </div>
@@ -278,7 +284,7 @@
             <!-- produits Simone -->
             <div class="card col-sm-12 col-lg-6 text-center py-5 Simone">
                 <img src="assets/img/lunette_Simone.jpeg" class="img-fluid card-img-top"
-                    style="width: 500px; height: auto;" alt="">
+                    style="width: 500px; height: auto;" alt="lunette de soleil model Simon avec un couché de soleil">
                 <div class="card-block">
                     <h2 class="card-title py-2">Lunette de soleil Simone</h2>
                     <p class="card-text">180€</p>
@@ -290,12 +296,12 @@
                 </div>
             </div>
             <!-- Modal Simone-->
-            <div class="modal fade" id="ModalSimone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="ModalSimone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Lunette de soleil Betty</h5>
+                            <h5 class="modal-title" id="exampleModalLabel4">Lunette de soleil Simon</h5>
                             <button type="button" class="close btn btn-outline-secondary" data-dismiss="modal"
                                 aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
@@ -303,19 +309,20 @@
                         </div>
 
                         <div class="modal-body">
-                            <p>Opter pour un style pin up! </p>
-                            <p>Vous serez séduit par cette forme rétro aux lignes douces,
-                                aux tons lumineux sable avec ses finitions métal</p>
+                            <p>Le style aviateur emblématique! </p>
+                            <p>Des montures intemporelles avec ce look aviateur alliant qualité et un confort.
+                                Un incomparables pour un style assuré.</p>
                             <ul>
                                 <li>FORME : Pilote</li>
-                                <li>COULEUR DE MONTURE : Sable </li>
+                                <li>COULEUR DE MONTURE : Poli Or</li>
                                 <li>MATÉRIAU DE MONTURE : Métal</li>
-                                <li>COULEUR DES VERRES : Fumé marron</li>
+                                <li>COULEUR DES VERRES : Fumé bleu</li>
                                 <li>TRAITEMENT DES VERRES : Classique</li>
                                 <li>ACCESSOIRES INCLUS : Etui</li>
                             </ul>
                             <p>Fabrication française.</p>
-                            <img src="assets/img/lunette_Betty.jpeg" class="img-fluid" alt="">
+                            <img src="assets/img/Lunette_Simone2.jpeg" class="img-fluid"
+                                alt="lunette de soleil model Simone sur fond blanc">
                         </div>
                     </div>
                 </div>
@@ -384,8 +391,8 @@
                     <div>Prix Total: <span class="total-cart"></span> €</div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                    <button type="button" class="btn btn-primary">Commander</button>
+                    <button type="button" class="close-cart btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="pay-cart btn btn-primary">Commander</button>
                     <button class="clear-cart btn btn-danger">Vider le Panier</button>
                 </div>
             </div>
@@ -396,7 +403,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
         </script>
-    <!-- pour afficher la modal et panier-->
+    <!-- pour afficher la modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
@@ -405,9 +412,11 @@
         </script>
     <!-- pour l autocomplete -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <!-- code nav/inscription/panier -->
-    <script src="script.js"></script>
+    <!-- pour le zoom des photos -->
+    <script src="zoomsl.min.js"></script>
+    <!-- le main js de ma page -->
     <script src="main.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

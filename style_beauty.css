@@ -1,23 +1,10 @@
-/* @font-face{
+@font-face{
     font-family: 'chillax-Regular';
     src:url(assets/fonts/Chillax-Regular.ttf)format('truetype');
 }
 @font-face{
     font-family: 'chillax-Medium';
     src:url(assets/fonts/Chillax-Medium.otf)format('truetype');
-} */
-
-@font-face {
-    font-family: "Chillax-Regular";
-    src: url(assets/fonts/Chillax-Regular.ttf) format("truetype"),
-        url(assets/fonts/Chillax-Regular.woff) format('woff2'),
-        url(assets/fonts/Chillax-Regular.woff2) format('woff');
-}
-@font-face {
-    font-family: "Chillax-Medium";
-    src: url(assets/fonts/Chillax-Medium.ttf) format("truetype"),
-        url(assets/fonts/Chillax-Medium.woff) format('woff2'),
-        url(assets/fonts/Chillax-Medium.woff2) format('woff');
 }
 *{
     margin: 0;
@@ -25,11 +12,9 @@
     box-sizing: border-box;
     outline: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .2s;
 }
 html{
-    /* font-size: 62.5%; */
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -37,11 +22,12 @@ html::-webkit-scrollbar{
     width: 1rem;
 }
 html::-webkit-scrollbar-track{
-    background: black;
+    background: #333;
     
 }
 html::-webkit-scrollbar-thumb{
-    background: gray ;
+    background:#f8efe9;
+    border-radius: 10%;
 }
 body{
     height: 100rem;
@@ -61,7 +47,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 0.7rem;
     position: relative;
 }
 #search-box{
@@ -106,7 +92,7 @@ header .navbar a:hover{
     color: #ffd7ba;
 }
 header .icons i, header .icons a{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #333;
     padding-left: 1rem;
     cursor: pointer;
@@ -157,6 +143,7 @@ header .icons i:hover, header .icons a:hover{
     }
     #menu{
         display: block;
+
     }
 }
 /*============== Log In form ===================*/
@@ -272,17 +259,17 @@ header .icons i:hover, header .icons a:hover{
 /*======================= Start Hero section ===================*/
 #hero {
     width: 100%;
-    height: 82vh;
+    height: 87vh;
     background: url("assets/img/organic-argan.jpg") center center;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
   }
-  #hero .container {
+ #hero .container {
     padding-top: 80px;
   } 
   
-   #hero:before {
+#hero:before {
     content: "";
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -343,22 +330,22 @@ header .icons i:hover, header .icons a:hover{
       line-height: 36px;
     }
   }
-  /*=================== End Hero section ===================*/
+/*=================== End Hero section ===================*/
   
 /*==================== Body first section ===================*/
 h1{
     font-size: 30px;
     font-weight: bold;
 }
- p{
+p{
     font-size: 15px;
     font-weight: 600;
     text-align: justify;
 }
-/* images section*/
+/*=================== images section ===========================*/
 .image{
     height: 50rem;
-    width: 120rem;
+    /* width: 120rem; */
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(51,51,51,.2);
     display: flex;
@@ -366,7 +353,7 @@ h1{
     overflow: hidden; 
 }
 .image-container{
-    width: 50%;  
+    width: 60%;  
 }
 .big-img, .hair, .hydratation, .big, .picture{
    height: 70%;
@@ -381,7 +368,7 @@ h1{
 }
 .small-image, .small, .sm-img, .pic, .pics{
     height: 30%;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
  }
@@ -399,15 +386,15 @@ h1{
  .content{
      width: 50%;
      position: relative;
-     padding: 2rem;
+     padding: 1.5rem;
  }
  .content h2{
-     font-size: 4rem;
+     font-size: 3rem;
      padding-top: 2rem;
      color: #e85d04;
  }
  .content p{
-     font-size: 2rem;
+     font-size: 1rem;
      padding: 1rem 0;
 
  }
@@ -417,10 +404,14 @@ h1{
  }
  
 
-/* Media queries Ipad */
+/*===================== Media queries Ipad =====================*/
 @media (max-width:1024px){
+    header .navbar a{
+        font-size: 1rem;
+    }
     .image{
-        width: 70rem;
+        width: 50rem;
+        margin: 4rem;
     }
     .content{
         width: 60%;
@@ -429,7 +420,7 @@ h1{
         font-size: 3rem;
     }
     .content p{
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 1rem 0;
    
     }
@@ -438,8 +429,16 @@ h1{
         font-size: 1.5rem;
     }  
 }
-/* Media queries Phone*/
+/* Media queries iPhone X*/
+@media (max-width:768px){
+    header .navbar a{
+        font-size: 2.5rem;
+    }
+}
 @media (max-width:375px){
+    header .navbar a{
+        font-size: 2rem;
+    }
     .image{
         width: 35rem;
         margin: 5rem;
@@ -456,15 +455,56 @@ h1{
     .content p{
         font-size: 1rem;
         padding: 1rem 0;
-
+   
     }
     .content .stars i{
         background-color: #ffba08;
         font-size: 1rem;
     }
+    .small-image img, .small img, .sm-img img, .pic img, .pics img{
+        height: 13rem;
+        width: 10rem;  
+        object-fit: cover;
+        cursor: pointer;
+        box-shadow: 0 .5rem 1rem rgba(51,51,51,.2);
+        border: 1rem solid #fff;
+    }
+}
+/* Media queries iPhone 6/7/8*/
+@media (max-width:414px){
+    .image{
+        width: 35rem;
+        margin: 5rem;
+    }
+    .content{
+        width: 50%;
+        position: relative;
+    }
+    .content h2{
+        font-size: 2rem;
+        padding-top: 1rem;
+        color: #e85d04;
+    }
+    .content p{
+        font-size: 0.8rem;
+        padding: 1rem 0;
+   
+    }
+    .content .stars i{
+        background-color: #ffba08;
+        font-size: 1rem;
+    }
+    .small-image img, .small img, .sm-img img, .pic img, .pics img{
+        height: 13rem;
+        width: 10rem;  
+        object-fit: cover;
+        cursor: pointer;
+        box-shadow: 0 .5rem 1rem rgba(51,51,51,.2);
+        border: 1rem solid #fff;
+    }
 }
 
-/* Add to cart */
+/*=================== Add to cart =================*/
 .card-title{
     font-size: 15px;
     font-weight: bold;
@@ -484,8 +524,6 @@ h1{
     display: flex;
     justify-content: center;
 }
-
-
 
 .wrapper{
     background-color: #e6d6c6;
@@ -544,21 +582,7 @@ h1{
     font-size: 20px;
     font-weight: 600;
 }
-/* .cart .btn{
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 .6rem 2rem rgba(15, 13, 13, 0.2);
-    border: 2px solid #ca6702;
-    border-radius: 7px;
-    margin: 4px;
-}
-.btn:hover{
-    background-color: #333;
-    color: #e6d6c6;
-    transform: scale(.7); 
-    
-} */
+
 .cart .price{
     font-size: 1.5rem;
     font-weight: bold;
@@ -566,45 +590,6 @@ h1{
 .cart .price span{
     text-decoration: line-through;
     
-}
-    
-
-
-/* footer */
- /* footer{
-    background-color:  #e8e8e4ff ;
-} */
-/* #footer {
-    background: black;
-    color: #333;
-    font-size: 20px;
-    margin-top: 30px;
-}
-#footer .footer-top {
-    background: #e8e8e4ff;
-    border-top: 1px solid #fec89a;
-    border-bottom: 1px solid #fec89a;
-    padding: 20px 0 30px 0;
-}
-
-#footer .copyright {
-    text-align: center;
-    padding-top: 5px;
-}
-#footer .credits {
-    padding-top: 5px;
-    text-align: center;
-    font-size: 13px;
-    color: #333;
-}
-#footer .credits a{
-    text-decoration: none;
-} */
-@media (max-width: 736px) {
-  .img-tot {
-    width: 180px;
-    height: 180px;
-  }
 }
 .service, .service p{
     font-size: 10px;
@@ -614,4 +599,67 @@ h1{
 /* footer */
     footer{
     background-color:  #e8e8e4ff ;
+}
+/* Citation */
+.bg{
+    background-color:  #fec89a;
+}
+#citation p{
+    font-family: 'Great Vibes', cursive;
+    color: olive;
+    font-size: 1.5rem;
+  }
+#citation h2{
+    font-family: 'Merienda', cursive;
+    color: white;
+}
+#citation h2:hover{
+    color: olive;
+}
+/* style modal panier */
+.close-cart{
+    background-color:#d8e2dcff;
+    border-color: #d8e2dcff;
+}
+.close-cart:hover{
+    background-color:  rgb(181, 224, 198);
+    border-color: rgb(181, 224, 198);
+}
+.pay-cart{
+    background-color:  #ffd7baff;
+    border-color: #ffd7baff;
+}
+.pay-cart:hover{
+        background-color:  #fec89aff;
+    border-color: #fec89aff;
+}
+.clear-cart{
+    background-color:#fcd5ceff;
+    border-color: #fcd5ceff;
+}
+.clear-cart:hover{
+    background-color: rgb(250, 155, 141);
+    border-color: rgb(250, 155, 141);
+}
+.minus-item, .plus-item{
+    background-color: rgb(175, 175, 173);
+    border-color: rgb(175, 175, 173);
+}
+.minus-item:hover{
+    background-color: rgb(121, 121, 119);
+    border-color: rgb(121, 121, 119);
+}
+.plus-item:hover{
+    background-color: rgb(121, 121, 119);
+    border-color: rgb(121, 121, 119);
+}
+.delete-item{
+    color: #fcd5ceff;
+    background-color:#fcd5ceff;
+    border-color: #fcd5ceff;
+}
+.delete-item:hover{
+    color: white;
+    background-color:rgb(250, 155, 141);
+    border-color: rgb(250, 155, 141);
 }

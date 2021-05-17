@@ -1,9 +1,3 @@
-/* @font-face {
-    font-family: "Chillax-Light";
-    src: url(typo/Chillax-Light.ttf) format("truetype"),
-        url(typo/chillax-light-webfont.woff2) format('woff2'),
-        url(typo/Chillax-Light.woff2) format('woff');
-} */
 @font-face {
     font-family: "Chillax-Semibold";
     src: url(assets/fonts/Chillax-Semibold.ttf) format("truetype"),
@@ -28,6 +22,10 @@
         url(assets/fonts/Chillax-Light.woff) format('woff2'),
         url(assets/fonts/Chillax-Light.woff2) format('woff');
 }
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 html::-webkit-scrollbar{
     width: 1rem;
 }
@@ -40,9 +38,9 @@ html::-webkit-scrollbar-thumb{
 }
 body{
     height: 100rem;
-    /* ajout css*/
     font-family: "Chillax-Light";
 }
+/*===================== Start Header ================*/
 header.sticky{
     position: fixed;
     top: 0;
@@ -50,16 +48,14 @@ header.sticky{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 header{
-    font-family: 'Chillax-Regular';
     z-index: 1;
     width: 100%;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 0.7rem;
     position: relative;
-    /*ajout css*/
 }
 #search-box{
     position: absolute;
@@ -103,7 +99,7 @@ header .navbar a:hover{
     color: #ffd7ba;
 }
 header .icons i, header .icons a{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #333;
     padding-left: 1rem;
     cursor: pointer;
@@ -125,7 +121,8 @@ header .icons i:hover, header .icons a:hover{
     header .navbar a{
         font-size: 1rem;
     }
-}@media (max-width:991px){
+}
+@media (max-width:991px){
     html{
         font-size: 55%;
     }
@@ -149,8 +146,7 @@ header .icons i:hover, header .icons a:hover{
     header .navbar.nav-toggle{
         transform: scaleY(1);
         opacity: 1;
-        background-color: rgba(252, 213, 206, 0.8);
-    }
+background-color: rgba(252, 213, 206, 0.8);    }
     #menu{
         display: block;
     }
@@ -205,8 +201,6 @@ header .icons i:hover, header .icons a:hover{
     border: 1px solid rgba(0, 0, 0, 0.1);
     outline: none;
     border-radius: 7px;
-    
-    
 }
 .login-form input::placeholder, .sign-up-form input::placeholder{
     color: rgba(0,0,0,0.5);
@@ -263,9 +257,7 @@ header .icons i:hover, header .icons a:hover{
 .sign-up-active .sign-up-form{
     display: flex;
 } 
-
-/* css dessus Meryem*/
-
+/* produit*/
 .card {
     border: none;
 }
@@ -286,4 +278,51 @@ header .icons i:hover, header .icons a:hover{
 /* footer */
     footer{
     background-color:  #e8e8e4ff ;
+}
+/* style modal panier */
+.close-cart{
+    background-color:#d8e2dcff;
+    border-color: #d8e2dcff;
+}
+.close-cart:hover{
+    background-color:  rgb(181, 224, 198);
+    border-color: rgb(181, 224, 198);
+}
+.pay-cart{
+    background-color:  #ffd7baff;
+    border-color: #ffd7baff;
+}
+.pay-cart:hover{
+        background-color:  #fec89aff;
+    border-color: #fec89aff;
+}
+.clear-cart{
+    background-color:#fcd5ceff;
+    border-color: #fcd5ceff;
+}
+.clear-cart:hover{
+    background-color: rgb(250, 155, 141);
+    border-color: rgb(250, 155, 141);
+}
+.minus-item, .plus-item{
+    background-color: rgb(175, 175, 173);
+    border-color: rgb(175, 175, 173);
+}
+.minus-item:hover{
+    background-color: rgb(121, 121, 119);
+    border-color: rgb(121, 121, 119);
+}
+.plus-item:hover{
+    background-color: rgb(121, 121, 119);
+    border-color: rgb(121, 121, 119);
+}
+.delete-item{
+    color: #fcd5ceff;
+    background-color:#fcd5ceff;
+    border-color: #fcd5ceff;
+}
+.delete-item:hover{
+    color: white;
+    background-color:rgb(250, 155, 141);
+    border-color: rgb(250, 155, 141);
 }

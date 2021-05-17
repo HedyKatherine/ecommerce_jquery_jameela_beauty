@@ -27,6 +27,10 @@
 }
 
 /* SCROLLBAR */ 
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 html::-webkit-scrollbar{
   width: 1rem;
 }
@@ -40,6 +44,7 @@ html::-webkit-scrollbar-thumb{
 
 /* GENERAL */
 body{
+  font-family: "Chillax-Regular";
   height: 300rem;
 }
 
@@ -88,8 +93,7 @@ h2, h3, p, li{
   } */
 
 
-/* Header */
-
+/*===================== Start Header ================*/
 header.sticky{
   position: fixed;
   top: 0;
@@ -97,15 +101,14 @@ header.sticky{
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 header{
-  width: 100%;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  position: relative;
-  font-family: "Chillax-Regular", sans-serif;
-  z-index: 1;
+    z-index: 1;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem;
+    position: relative;
 }
 #search-box{
   position: absolute;
@@ -146,26 +149,21 @@ header .navbar a{
   padding: 0 1rem;
   text-decoration: none;
 }
-
 header .navbar a:hover{
   color: rgb(216, 226, 220);
 }
-
 header .icons i, header .icons a{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #333;
   padding-left: 1rem;
   cursor: pointer;
 }
-
 header .icons i:hover, header .icons a:hover{
   color: rgb(216, 226, 220);
 }
-
 .fa-times{
   transform:rotate(-360deg);
 }
-
 #menu{
   font-size: 3rem;
   color: #333;
@@ -359,10 +357,56 @@ header .icons i:hover, header .icons a:hover{
 
   }
 }
-
 @media (max-width: 736px) {
   .img-tot {
     width: 180px;
     height: 180px;
   }
+}
+/* style modal panier */
+.close-cart{
+    background-color:#d8e2dcff;
+    border-color: #d8e2dcff;
+}
+.close-cart:hover{
+    background-color:  rgb(181, 224, 198);
+    border-color: rgb(181, 224, 198);
+}
+.pay-cart{
+    background-color:  #ffd7baff;
+    border-color: #ffd7baff;
+}
+.pay-cart:hover{
+        background-color:  #fec89aff;
+    border-color: #fec89aff;
+}
+.clear-cart{
+    background-color:#fcd5ceff;
+    border-color: #fcd5ceff;
+}
+.clear-cart:hover{
+    background-color: rgb(250, 155, 141);
+    border-color: rgb(250, 155, 141);
+}
+.minus-item, .plus-item{
+    background-color: rgb(175, 175, 173);
+    border-color: rgb(175, 175, 173);
+}
+.minus-item:hover{
+    background-color: rgb(121, 121, 119);
+    border-color: rgb(121, 121, 119);
+}
+.plus-item:hover{
+    background-color: rgb(121, 121, 119);
+    border-color: rgb(121, 121, 119);
+}
+.delete-item{
+    color: #fcd5ceff;
+    background-color:#fcd5ceff;
+    border-color: #fcd5ceff;
+}
+.delete-item:hover{
+    color: white;
+    background-color:rgb(250, 155, 141);
+    border-color: rgb(250, 155, 141);
 }

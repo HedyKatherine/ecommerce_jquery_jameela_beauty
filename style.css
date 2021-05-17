@@ -22,6 +22,10 @@
         url(assets/fonts/Chillax-Light.woff) format('woff2'),
         url(assets/fonts/Chillax-Light.woff2) format('woff');
 }
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 html::-webkit-scrollbar{
     width: 1rem;
 }
@@ -50,7 +54,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 0.7rem;
     position: relative;
 }
 #search-box{
@@ -95,7 +99,7 @@ header .navbar a:hover{
     color: #ffd7ba;
 }
 header .icons i, header .icons a{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #333;
     padding-left: 1rem;
     cursor: pointer;
@@ -112,7 +116,6 @@ header .icons i:hover, header .icons a:hover{
     display: none;
     cursor: pointer;
 }
-
 /* MediaQueries header */
 @media (max-width:1024px){
     header .navbar a{
@@ -354,4 +357,51 @@ header .icons i:hover, header .icons a:hover{
     width: 250px;
     height: auto;
 }
+}
+/* style modal panier */
+.close-cart{
+    background-color:#d8e2dcff;
+    border-color: #d8e2dcff;
+}
+.close-cart:hover{
+    background-color:  rgb(181, 224, 198);
+    border-color: rgb(181, 224, 198);
+}
+.pay-cart{
+    background-color:  #ffd7baff;
+    border-color: #ffd7baff;
+}
+.pay-cart:hover{
+        background-color:  #fec89aff;
+    border-color: #fec89aff;
+}
+.clear-cart{
+    background-color:#fcd5ceff;
+    border-color: #fcd5ceff;
+}
+.clear-cart:hover{
+    background-color: rgb(250, 155, 141);
+    border-color: rgb(250, 155, 141);
+}
+.minus-item, .plus-item{
+    background-color: rgb(175, 175, 173);
+    border-color: rgb(175, 175, 173);
+}
+.minus-item:hover{
+    background-color: rgb(121, 121, 119);
+    border-color: rgb(121, 121, 119);
+}
+.plus-item:hover{
+    background-color: rgb(121, 121, 119);
+    border-color: rgb(121, 121, 119);
+}
+.delete-item{
+    color: #fcd5ceff;
+    background-color:#fcd5ceff;
+    border-color: #fcd5ceff;
+}
+.delete-item:hover{
+    color: white;
+    background-color:rgb(250, 155, 141);
+    border-color: rgb(250, 155, 141);
 }

@@ -167,6 +167,7 @@
     <footer class="footer py-2">
         <p class="text-dark text-center">Copyright © Jameela 2021</p>
     </footer>
+    <!--====================== Modal Panier =====================-->
     <!-- Modal -->
     <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -184,8 +185,8 @@
                     <div>Prix Total: <span class="total-cart"></span> €</div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                    <button type="button" class="btn btn-primary">Commander</button>
+                    <button type="button" class="close-cart btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="pay-cart btn btn-primary">Commander</button>
                     <button class="clear-cart btn btn-danger">Vider le Panier</button>
                 </div>
             </div>
@@ -196,7 +197,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
         </script>
-    <!-- pour afficher la modal et panier-->
+    <!-- pour afficher la modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
@@ -205,9 +206,11 @@
         </script>
     <!-- pour l autocomplete -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- pour le zoom des photos -->
+    <script src="zoomsl.min.js"></script>
     <!-- le main js de ma page -->
-    <script src="script.js"></script>
     <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

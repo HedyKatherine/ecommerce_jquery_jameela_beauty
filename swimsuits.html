@@ -90,12 +90,10 @@
     </div>
   </div>
   <!--=================== End log in and sing in  form ================-->
-
-
-  <div class="row mt-3">
-    <img class="col-sm-12 col-lg-5 mt-3" src="assets/img/image_accueil_swimsuits.png"
+  <div class="row">
+    <img class="col-sm-12 col-lg-6 img-fluid" src="assets/img/image_accueil_swimsuits.png"
       alt="photo d'une femme nageant vers la surface de l'eau" id="swimSuitFirstImage">
-    <div class="col-sm-12 col-lg-6 p-4 mt-5 m-3 align-self-center">
+    <div class="col-sm-12 col-lg-6 p-4 align-self-center">
       <h2 class="text-center mt-3">JAMEELA SWIMSUITS</h2>
       <h3 class="text-center mt-5">Les maillots de bain éco-friendly</h3>
       <h3 class="text-center m-5">par la créatrice Izaka Istasoa</h3>
@@ -116,10 +114,9 @@
         rencontres.</p>
     </div>
   </div>
-
-  <!-- test produit panier -->
+  <!-- produit panier -->
+  <!-- produit panier 1 -->
   <div class="container-fluid">
-
     <div class="row mt-5">
       <div class="card col-sm-12 col-lg-4">
         <img img src="assets/img/multicolor.jpg" alt="photo d'une femme en maillot de bain multicouleur"
@@ -134,15 +131,49 @@
         <a href="#" data-name="maillot_multi_couleur" data-price="120"
           class="add-to-cart btn btn-outline-secondary">Ajouter au
           panier</a>
-        <a href="#" class="btn btn-outline-secondary">Details</a>
+        <a href="#" class="btn btn-outline-secondary" data-toggle="modal"
+          data-target="#detailsSwimSuitsMultiColor">Details</a>
+        <!-- Modal 1-->
+        <div class="modal fade" id="detailsSwimSuitsMultiColor" tabindex="-1" role="dialog"
+          aria-labelledby="detailsSwimSuitsMultiColor" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Détails produit:</h5>
+              </div>
+              <div class="row text-start m-5 p-2">
+                <h6 class="p-2 ml-5">Référence 2557224 / MKD912</h6>
+                <ul class="p-2 m-4">Détails produit
+                  <li>1 pièce</li>
+                  <li>À bretelles, attaches au cou</li>
+                  <li>Avec coques</li>
+                  <li>Sans armature</li>
+                  <li>Stylisme échancré</li>
+                </ul>
+                <ul class="p-2 m-4">Composition et Entretien
+                  <li>Matière principale : 88% Econyl, 8% élasthanne, 4% autres fibres</li>
+                  <li>Pour l'entretien, merci de vous référer à ces indications</li>
+                  <li>Température de lavage 30° cycle délicat</li>
+                  <li>Ne pas repasser / blanchiment interdit</li>
+                  <li>Ne pas sécher en tambour</li>
+                  <li>Pas de nettoyage à sec</li>
+                  <p class="p-2 ml-1">Couleur : Multicouleur</p>
+                </ul>
+              </div>
+              <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fermer la
+                  description</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- produit panier 2 -->
       <div class="col-sm-12 col-lg-4">
         <img src="assets/img/plage.jpg" alt="photo d'une femme sur la plage" style="width: 400px; height: 600px;"
           id="firstBeachImage" class="img-fluid">
       </div>
     </div>
-
-
     <div class="row mt-5">
       <div class="card col-sm-12 col-lg-8">
         <img src="assets/img/maillot-blanc-lacets.jpg" alt="photo d'une femme en maillot de bain blanc"
@@ -157,10 +188,45 @@
         <p class="card-text py-3">100€</p>
         <a href="#" data-name="maillot_blanc" data-price="100" class="add-to-cart btn btn-outline-secondary">Ajouter au
           panier</a>
-        <a href="#" class="btn btn-outline-secondary">Details</a>
+        <a href="#" class="btn btn-outline-secondary" data-toggle="modal"
+          data-target="#detailsSwimSuitsWhite">Details</a>
+      </div>
+      <!-- Modal 2 -->
+      <div class="modal fade" id="detailsSwimSuitsWhite" tabindex="-1" role="dialog"
+        aria-labelledby="detailsSwimSuitsWhite" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Détails produit:</h5>
+            </div>
+            <div class="row text-start m-5 p-2">
+              <h6 class="p-2 ml-5">Référence 2636223 / GJH953</h6>
+              <ul class="p-2 m-4">Détails produit
+                <li>1 pièce</li>
+                <li>À bretelles</li>
+                <li>Sans coques</li>
+                <li>Sans armature</li>
+                <li>Empiècements latéraux, découpes symétriques laçages</li>
+              </ul>
+              <ul class="p-2 m-4">Composition et Entretien
+                <li>Matière principale : 88% Econyl, 8% élasthanne, 4% autres fibres</li>
+                <li>Pour l'entretien, merci de vous référer à ces indications</li>
+                <li>Température de lavage 30° cycle délicat</li>
+                <li>Ne pas repasser / blanchiment interdit</li>
+                <li>Ne pas sécher en tambour</li>
+                <li>Pas de nettoyage à sec</li>
+                <p class="p-2 ml-1">Couleur : Blanc</p>
+              </ul>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fermer la
+                description</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
+    <!-- produit panier 3 -->
     <div class="row mt-5">
       <div class="card col-sm-12 col-lg-4">
         <img src="assets/img/maillot-lacets-verts.jpg" alt="photo d'une femme en maillot de bain vert khaki"
@@ -174,14 +240,49 @@
         <p class="card-text py-3">130€</p>
         <a href="#" data-name="maillot_vert" data-price="130" class="add-to-cart btn btn-outline-secondary">Ajouter au
           panier</a>
-        <a href="#" class="btn btn-outline-secondary">Details</a>
+        <a href="#" class="btn btn-outline-secondary" data-toggle="modal"
+          data-target="#detailsSwimSuitsGreen">Details</a>
       </div>
+      <!-- Modal 3-->
+      <div class="modal fade" id="detailsSwimSuitsGreen" tabindex="-1" role="dialog"
+        aria-labelledby="detailsSwimSuitsGreen" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Détails produit:</h5>
+            </div>
+            <div class="row text-start m-5 p-2">
+              <h6 class="p-2 ml-5">Référence 2953723 / FZT557</h6>
+              <ul class="p-2 m-4">Détails produit
+                <li>1 pièce</li>
+                <li>À bretelles et laçages</li>
+                <li>Sans coques</li>
+                <li>Sans armature</li>
+                <li>Liens Bikini par laçages</li>
+              </ul>
+              <ul class="p-2 m-4">Composition et Entretien
+                <li>Matière principale : 88% Econyl, 8% élasthanne, 4% autres fibres</li>
+                <li>Pour l'entretien, merci de vous référer à ces indications</li>
+                <li>Température de lavage 30° cycle délicat</li>
+                <li>Ne pas repasser / blanchiment interdit</li>
+                <li>Ne pas sécher en tambour</li>
+                <li>Pas de nettoyage à sec</li>
+                <p class="p-2 ml-1">Couleur : Vert khaki</p>
+              </ul>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fermer la
+                description</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- produit panier 4 -->
       <div class="col-sm-12 col-lg-4">
         <img src="assets/img/maillot-crochet.jpg" alt="photo d'une femme en maillot de bain crochet"
           style="width: auto; height: 600px;" id="secondBeachImage" class="img-fluid">
       </div>
     </div>
-
     <div class="row mt-5">
       <div class="card col-sm-12 col-lg-8">
         <img img src="assets/img/maillot-bleu.jpg" alt="photo d'une femme en maillot de bain bleu"
@@ -195,11 +296,47 @@
         <p class="card-text py-3">110€</p>
         <a href="#" data-name="maillot_bleu" data-price="110" class="add-to-cart btn btn-outline-secondary">Ajouter au
           panier</a>
-        <a href="#" class="btn btn-outline-secondary">Details</a>
+        <a href="#" class="btn btn-outline-secondary" data-toggle="modal"
+          data-target="#detailsSwimSuitsBlue">Details</a>
+      </div>
+      <!-- Modal 4-->
+      <div class="modal fade" id="detailsSwimSuitsBlue" tabindex="-1" role="dialog"
+        aria-labelledby="detailsSwimSuitsBlue" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Détails produit:</h5>
+            </div>
+            <div class="row text-start m-5 p-2">
+              <h6 class="p-2 ml-5">Référence 298423 / MPL558</h6>
+              <ul class="p-2 m-4">Détails produit
+                <li>1 pièce</li>
+                <li>Bretelles et dos échancré</li>
+                <li>Sans coques</li>
+                <li>Sans armature</li>
+                <li>Épaisseur accrue par diamètre des fibres augmenté</li>
+                <li>Stylisme sportif</li>
+              </ul>
+              <ul class="p-2 m-4">Composition et Entretien
+                <li>Matière principale : 88% Econyl, 8% élasthanne, 4% autres fibres</li>
+                <li>Pour l'entretien, merci de vous référer à ces indications</li>
+                <li>Température de lavage 30° cycle délicat</li>
+                <li>Ne pas repasser / blanchiment interdit</li>
+                <li>Ne pas sécher en tambour</li>
+                <li>Pas de nettoyage à sec</li>
+                <p class="p-2 ml-1">Couleur : Bleu</p>
+              </ul>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fermer la
+                description</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
+  <!-- produit panier 5 -->
   <div class="row mt-5">
     <div class="card col-sm-12 col-lg-4">
       <img src="assets/img/maillot-noir-decoupe.jpg" alt="photo d'une femme en maillot de bain noir"
@@ -217,7 +354,41 @@
       <p class="card-text py-3">140€</p>
       <a href="#" data-name="maillot_noir" data-price="140" class="add-to-cart btn btn-outline-secondary">Ajouter au
         panier</a>
-      <a href="#" class="btn btn-outline-secondary">Details</a>
+      <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#detailsSwimSuitsBlack">Details</a>
+    </div>
+    <!-- Modal 5-->
+    <div class="modal fade" id="detailsSwimSuitsBlack" tabindex="-1" role="dialog"
+      aria-labelledby="detailsSwimSuitsBlack" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Détails produit:</h5>
+          </div>
+          <div class="row text-start m-5 p-2">
+            <h6 class="p-2 ml-5">Référence 285757 / ZZR987</h6>
+            <ul class="p-2 m-4">Détails produit
+              <li>1 pièce</li>
+              <li>Bretelles et dos échancré</li>
+              <li>Sans coques</li>
+              <li>Sans armature</li>
+              <li>Coupe ergonomique</li>
+              <li>Épaisseur accrue par diamètre des fibres augmenté</li>
+            </ul>
+            <ul class="p-2 m-4">Composition et Entretien
+              <li>Matière principale : 88% Econyl, 8% élasthanne, 4% autres fibres</li>
+              <li>Pour l'entretien, merci de vous référer à ces indications</li>
+              <li>Température de lavage 30° cycle délicat</li>
+              <li>Ne pas repasser / blanchiment interdit</li>
+              <li>Ne pas sécher en tambour</li>
+              <li>Pas de nettoyage à sec</li>
+              <p class="p-2 ml-1">Couleur : Noir</p>
+            </ul>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fermer la description</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col-sm-12 col-lg-4">
       <img img src="assets/img/maillot-noir-final.jpg" alt="photo d'une femme sur la plage tenant un drapeau noir"
@@ -225,15 +396,12 @@
         id="thirdBeachImage" class="img-fluid">
     </div>
   </div>
-
-
-
   <!-- Termes & Conditions -->
   <div class="container my-5 py-4">
     <div class="about-text p-5 border text-center">
       <h2 class="animate__animated animate__bounce">Suivez-nous !</h2>
       <hr>
-      <img src="assets/img/tooooote.gif" class="img-tot py-4" alt="">
+      <img src="assets/img/swimsuits.gif" class="img-tot py-4" alt="">
       <div class="about-text  text-center">
         <div class="row pb-1">
           <div class="col-sm-4 pb-5 text-center ">
@@ -269,6 +437,7 @@
     <p class="text-dark text-center"> Copyright ©Jameela 2021. Tous droits réservés.</p>
   </footer>
 
+  <!--====================== Modal Panier =====================-->
   <!-- Modal -->
   <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -281,41 +450,36 @@
         </div>
         <div class="modal-body">
           <table class="show-cart table">
-
           </table>
           <div>Prix Total: <span class="total-cart"></span> €</div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-          <button type="button" class="btn btn-primary">Commander</button>
-          </button><button class="clear-cart btn btn-danger">Vider le Panier</button>
+          <button type="button" class="close-cart btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="button" class="pay-cart btn btn-primary">Commander</button>
+          <button class="clear-cart btn btn-danger">Vider le Panier</button>
         </div>
       </div>
     </div>
   </div>
 
-
-
-
-
-
-
-  <!-- <script src="css.file/bootstrap.min.js"></script> -->
+  <!-- Jquiery CDN -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
     </script>
+  <!-- pour afficher la modal -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
     integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-
-  <script src="script.js"></script>
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+    </script>
+  <!-- pour l autocomplete -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- pour le zoom des photos -->
+  <script src="zoomsl.min.js"></script>
+  <!-- le main js de ma page -->
   <script src="main.js"></script>
-  <!-- <script src="assets/js/cart.js"></script> -->
+  <script src="script.js"></script>
 </body>
 
 </html>
