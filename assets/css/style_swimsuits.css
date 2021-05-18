@@ -328,3 +328,9 @@ background-color: rgba(252, 213, 206, 0.8);    }
     background-color:rgb(250, 155, 141);
     border-color: rgb(250, 155, 141);
 }
+.spanhidden{
+    border: 1px solid  rgb(121, 121, 119);
+    border-radius: 10%;
+    padding: 30%;
+    font-family: "Chillax-Medium";
+}

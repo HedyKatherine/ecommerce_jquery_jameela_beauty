@@ -150,6 +150,10 @@ allBoxes.forEach(card => {
     })
   })
 })
+//=============== Carousel tote bag===============//
+$('.carousel').carousel({
+  interval: 2000
+})
 
 
 

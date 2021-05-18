@@ -10,7 +10,7 @@ var shoppingCart = (function () {
     this.count = count;
   }
   // *Sauvagarde du cart (panier)* //
-  // JSON(JavaScript Object Notation) est un format léger d'échange de données
+  // JSON(JavaScript Object Notation) est un format léger d'échange de données.
   // La méthode JSON.stringify() convertit une valeur JavaScript en chaîne JSON., elle remplace les valeurs inclues dans le tableau cart et permet de stocké les données
   function saveCart() {
     sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
@@ -21,7 +21,7 @@ var shoppingCart = (function () {
   function loadCart() {
     cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
   }
-  // Si la fonction shopping (contenant une tableau vide sans chargement de donné stockés) on affiche  
+  // Si la fonction shopping (contenant une tableau vide sans chargement de donné stockés) on affiche mais vide 
   if (sessionStorage.getItem("shoppingCart") != null) {
     loadCart();
   }
@@ -58,13 +58,13 @@ var shoppingCart = (function () {
       }
     }
   };
-  //fonction: avec .removeItemFromCart on retirer (le nom) du produits de la variable obj dans le cart(panier) *********************
+  //fonction: avec .removeItemFromCart on retirer (le nom) du produits de la variable obj dans le cart(panier)
   obj.removeItemFromCart = function (name) {
     for (var item in cart) {
-      // si le produit existe dans panier on retire au compteur 
+      // si le produit existe dans panier on decrémente au compteur du produit  
       if (cart[item].name === name) {
         cart[item].count--;
-        //  si le compteur est a 0 on le retire du panier    ******
+        //  si le compteur est a 0 on le retire du panier
         if (cart[item].count === 0) {
           cart.splice(item, 1);
         }
@@ -76,7 +76,6 @@ var shoppingCart = (function () {
   //fonction: avec .removeItemFromCartAll on retirer tous les objet du cart(panier)
   obj.removeItemFromCartAll = function (name) {
     for (var item in cart) {
-      // *******
       if (cart[item].name === name) {
         cart.splice(item, 1);
         break;
