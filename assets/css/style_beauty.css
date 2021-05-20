@@ -1,11 +1,3 @@
-@font-face{
-    font-family: 'chillax-Regular';
-    src:url(../fonts/Chillax-Regular.ttf)format('truetype');
-}
-@font-face{
-    font-family: 'chillax-Medium';
-    src:url(../fonts/Chillax-Medium.otf)format('truetype');
-}
 *{
     margin: 0;
     padding: 0;
@@ -14,248 +6,27 @@
     text-decoration: none;
     transition: all .2s;
 }
-html{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-html::-webkit-scrollbar{
-    width: 1rem;
-}
-html::-webkit-scrollbar-track{
-    background: #333;
-    
-}
-html::-webkit-scrollbar-thumb{
-    background:#f8efe9;
-    border-radius: 10%;
-}
 body{
     height: 100rem;
     font-family: 'chillax-Regular';
 }
 /*===================== Start Header ================*/
-header.sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-}
-header{
-    z-index: 1;
-    width: 100%;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.7rem;
-    position: relative;
+header .icons i:hover, header .icons a:hover{
+    color: #ffd7ba;
 }
 #search-box{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
     background:#ffd7ba;
-    padding: 2rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    transform-origin: top;
-    transform: scaleY(0);
-    opacity: 0;
-}
-#search-box.active{
-    transform: scaleY(1);
-    opacity: 1;
-}
-#search-box #search{
-    width: 100%;
-    padding: 12px;
-    text-transform: none;
-    font-size: 1rem;
-}
-#search-box #search::placeholder{
-    text-transform: capitalize;
-}
-#search-box label{
-    color: #333;
-    cursor: pointer;
-    padding-left: 2rem;
-}
-header .navbar a{
-    color: #333;
-    font-size: 1.5rem;
-    padding: 0 1rem;
-    text-decoration: none;
 }
 header .navbar a:hover{
     color: #ffd7ba;
 }
-header .icons i, header .icons a{
-    font-size: 1.5rem;
-    color: #333;
-    padding-left: 1rem;
-    cursor: pointer;
-}
-header .icons i:hover, header .icons a:hover{
-    color: #ffd7ba;
-}
-.fa-times{
-    transform:rotate(-360deg);
-}
-#menu{
-    font-size: 3rem;
-    color: #333;
-    display: none;
-    cursor: pointer;
-}
-/* MediaQueries header */
-@media (max-width:1024px){
-    header .navbar a{
-        font-size: 1rem;
-    }
-}
 @media (max-width:991px){
-    html{
-        font-size: 55%;
-    }
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        z-index: 1000;
-        padding: 2rem;
-        border-top: .1rem solid rgba(0,0,0,.1);
-        transform-origin: top;
-        transform: scaleY(0);
-        opacity: 0;
-    }
-    header .navbar a{
-        font-size: 2rem;
-        padding:1.5rem;
-    }
     header .navbar.nav-toggle{
         transform: scaleY(1);
         opacity: 1;
         background-color:  rgba(255, 215, 186, 0.8);
     }
-    #menu{
-        display: block;
-
-    }
 }
-/*============== Log In form ===================*/
-.form{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.2);
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;;
-    align-items: center;
-    flex-direction: column;
-    z-index: 102;
-}
-.login-form, .sign-up-form{
-    position: relative;
-    width: 420px;
-    padding: 20px 10px;
-    background: #fff;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 5px;
-}
-.login-form form, .sign-up-form form{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.login-form strong, .sign-up-form strong{
-    color: #272727;
-    font-size: 2rem;
-    font-weight: 500;
-    margin: 2px 7px 7px 7px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-family: 'chillax-Medium';
-}
-.login-form input, .sign-up-form input{
-    width: 90%;
-    height: 45px;
-    margin: 6px 0px;
-    padding: 0px 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    outline: none;
-    border-radius: 7px;
-    
-    
-}
-.login-form input::placeholder, .sign-up-form input::placeholder{
-    color: rgba(0,0,0,0.5);
-}
-.login-form input[type="submit"], .sign-up-form input[type="submit"]{
-    background: #606c38;
-    color: #ffffff;
-    outline: none;
-    border: none;
-    text-transform: uppercase;
-    margin-top: 10px;
-    border-radius: 3px;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-    font-weight: 700;
-    font-family: 'chillax-Medium';
-}
-.form-btns{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-.form-btns a{
-    color: #4d4d4d;
-    font-size: 0.9rem;
-    text-decoration: none;
-    font-family: 'chillax-Medium';
-}
-.sign-up-btn{
-    border-bottom: 1px solid #868686;
-    line-height: 16px;
-}
-.form-cancel{
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    color: #868686;
-    font-size: 20px;
-}
-.form-cancel:hover{
-    color: #bc6c25;
-    transition: all ease 0.3s;
-}
-.login-form, .sign-up-form, .form{
-    display: none;
-} 
-
-.login-active,
-.login-active .login-form{
-    display: flex;
-}
-.sign-up-active,
-.sign-up-active .sign-up-form{
-    display: flex;
-} 
-
-/*======================= End header =====================*/
 /*======================= Start Hero section ===================*/
 #hero {
     width: 100%;
@@ -264,11 +35,11 @@ header .icons i:hover, header .icons a:hover{
     background-size: cover;
     position: relative;
     background-attachment: fixed;
-  }
- #hero .container {
+}
+#hero .container {
     padding-top: 80px;
-  } 
-  
+} 
+
 #hero:before {
     content: "";
     background: rgba(0, 0, 0, 0.6);
@@ -277,15 +48,15 @@ header .icons i:hover, header .icons a:hover{
     top: 0;
     left: 0;
     right: 0;
-  } 
-   #hero h1 {
+} 
+#hero h1 {
     margin: 0 0 10px 0;
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
     color: #fff;
-  }
-  #hero h2 {
+}
+#hero h2 {
     color: #eee;
     margin-bottom: 40px;
     font-size: 15px;
@@ -293,8 +64,8 @@ header .icons i:hover, header .icons a:hover{
     font-family: "Open Sans", sans-serif;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-  }
-  #hero .btn-get-started {
+}
+#hero .btn-get-started {
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
@@ -308,30 +79,30 @@ header .icons i:hover, header .icons a:hover{
     border: 2px solid #fff;
     color: #fff;
     text-decoration: none;
-  }
-  #hero .btn-get-started:hover {
+}
+#hero .btn-get-started:hover {
     background: #fb8500;
     border: 2px solid #fb8500;
-  }
-  @media (min-width: 1024px) {
+}
+@media (min-width: 1024px) {
     #hero {
-      background-attachment: fixed;
+    background-attachment: fixed;
     }
-  }
-  @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
     #hero {
-      height: 100vh;
+    height: 100vh;
     }
     #hero .container {
-      padding-top: 60px;
+    padding-top: 60px;
     }
     #hero h1 {
-      font-size: 32px;
-      line-height: 36px;
+    font-size: 32px;
+    line-height: 36px;
     }
-  }
+}
 /*=================== End Hero section ===================*/
-  
+
 /*==================== Body first section ===================*/
 h1{
     font-size: 30px;
@@ -356,9 +127,9 @@ p{
     width: 60%;  
 }
 .big-img, .hair, .hydratation, .big, .picture{
-   height: 70%;
-   width: 100%;
-   padding: 1rem;
+    height: 70%;
+    width: 100%;
+    padding: 1rem;
 }
 .big-img img, .hair img, .hydratation img, .big img, .picture img{
     height: 100%;
@@ -371,38 +142,36 @@ p{
     width: 80%;
     display: flex;
     justify-content: space-between;
- }
- .small-image img, .small img, .sm-img img, .pic img, .pics img{
-     height: 13rem;
-     width: 13rem;  
-     object-fit: cover;
-     cursor: pointer;
-     box-shadow: 0 .5rem 1rem rgba(51,51,51,.2);
-     border: 1rem solid #fff;
- }
- .small-image img:hover, .small img:hover, .sm-img img:hover, .pic img:hover, .pics img:hover{
-     transform: scale(.7);
- }
- .content{
-     width: 50%;
-     position: relative;
-     padding: 1.5rem;
- }
- .content h2{
-     font-size: 3rem;
-     padding-top: 2rem;
-     color: #e85d04;
- }
- .content p{
-     font-size: 1rem;
-     padding: 1rem 0;
-
- }
- .content .stars i{
-     background-color: #ffba08;
-     font-size: 2rem;
- }
- 
+}
+.small-image img, .small img, .sm-img img, .pic img, .pics img{
+    height: 13rem;
+    width: 13rem;  
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(51,51,51,.2);
+    border: 1rem solid #fff;
+}
+.small-image img:hover, .small img:hover, .sm-img img:hover, .pic img:hover, .pics img:hover{
+    transform: scale(.7);
+}
+.content{
+    width: 50%;
+    position: relative;
+    padding: 1.5rem;
+}
+.content h2{
+    font-size: 3rem;
+    padding-top: 2rem;
+    color: #e85d04;
+}
+.content p{
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+.content .stars i{
+    background-color: #ffba08;
+    font-size: 2rem;
+}
 
 /*===================== Media queries Ipad =====================*/
 @media (max-width:1024px){
@@ -422,7 +191,6 @@ p{
     .content p{
         font-size: 1rem;
         padding: 1rem 0;
-   
     }
     .content .stars i{
         background-color: #ffba08;
@@ -455,7 +223,6 @@ p{
     .content p{
         font-size: 1rem;
         padding: 1rem 0;
-   
     }
     .content .stars i{
         background-color: #ffba08;
@@ -488,7 +255,6 @@ p{
     .content p{
         font-size: 0.8rem;
         padding: 1rem 0;
-   
     }
     .content .stars i{
         background-color: #ffba08;
@@ -503,8 +269,17 @@ p{
         border: 1rem solid #fff;
     }
 }
-
 /*=================== Add to cart =================*/
+.card{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+.card:hover{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+}
+.card img{
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
 .card-title{
     font-size: 15px;
     font-weight: bold;
@@ -518,22 +293,30 @@ p{
 .card-text{
     text-align: center;
 }
-.add-to-cart {
+.contenue{
     font-size: 15px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    background-color: #bc6c25;
+    line-height: 28px;
+    margin: 15px 15px 10px 15px; /* up left down right*/
+    height: 30px;
+    overflow: hidden;
 }
-.add-to-cart i{
+.card a{
+    display: inline-block;
     color: #fff;
-    font-size: 20px;
-    margin-left: 12px;
+    background: #e07a5f;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 10px;
+} 
+
+.card a:hover{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
 }
-.add-to-cart:hover{
-    transform: scale(1.1);
-    color: #fff;
-    background-color: #40916c;
+.card .showContent .contenue{
+    height: auto;
+}
+.card .showContent a .readmore-btn{
+    background-color: #f9c74f;
 }
 .cart-nav{
     position: absolute;
@@ -562,16 +345,11 @@ p{
     font-size: 20px;
     color: #9b2226;
 }
-
 /* Footer */
 .service, .service p{
     font-size: 10px;
     line-height: 6px;
     text-align: center;
-}
-/* footer */
-    footer{
-    background-color:  #e8e8e4ff ;
 }
 /* Citation */
 .bg{
@@ -589,56 +367,60 @@ p{
 #citation h2:hover{
     color: olive;
 }
-/* style modal panier */
-.close-cart{
-    background-color:#d8e2dcff;
-    border-color: #d8e2dcff;
+/* ======================== Special offer */
+.offer {
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("assets/img/offre/argan-life.jpg") fixed center center;
+  background-size: cover;
+  padding: 60px 0;
 }
-.close-cart:hover{
-    background-color:  rgb(181, 224, 198);
-    border-color: rgb(181, 224, 198);
+.offer p {
+  color: #fff;
 }
-.pay-cart{
-    background-color:  #ffd7baff;
-    border-color: #ffd7baff;
+.offer-btn {
+  font-family: 'chillax-Medium';
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  background: #9d0208;
 }
-.pay-cart:hover{
-        background-color:  #fec89aff;
-    border-color: #fec89aff;
+.offer-btn:hover {
+  background: #9d0208;
+  border: 2px solid #009970;
 }
-.clear-cart{
-    background-color:#fcd5ceff;
-    border-color: #fcd5ceff;
+.duo-offer li{
+   list-style: none;
+   font-size: 20px;
 }
-.clear-cart:hover{
-    background-color: rgb(250, 155, 141);
-    border-color: rgb(250, 155, 141);
+.duo-offer i{
+    
+    color: #9d0208;
+    font-size: 20px;
+    font-weight: 800;
 }
-.minus-item, .plus-item{
-    background-color: rgb(175, 175, 173);
-    border-color: rgb(175, 175, 173);
+.modal-body p{
+    color: #9d0208;
+    font-size: 25px;
+    font-weight: 800;
 }
-.minus-item:hover{
-    background-color: rgb(121, 121, 119);
-    border-color: rgb(121, 121, 119);
+.modal-title{
+    font-size: 25px;
+    font-weight: 400;
 }
-.plus-item:hover{
-    background-color: rgb(121, 121, 119);
-    border-color: rgb(121, 121, 119);
+.modal-title span{
+    font-weight: 800;
+    text-decoration: underline;
+    color: #dc2f02;
 }
-.delete-item{
-    color: #fcd5ceff;
-    background-color:#fcd5ceff;
-    border-color: #fcd5ceff;
-}
-.delete-item:hover{
-    color: white;
-    background-color:rgb(250, 155, 141);
-    border-color: rgb(250, 155, 141);
-}
-.spanhidden{
-    border: 1px solid  rgb(121, 121, 119);
-    border-radius: 10%;
-    padding: 30%;
-    font-family: "Chillax-Medium";
-}
+/* .modal-img{
+    background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("assets/img/offre/relaxation.jpg") fixed center center;
+    background-size: cover;
+    padding: 60px 0;
+} */

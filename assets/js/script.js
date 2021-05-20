@@ -154,6 +154,21 @@ allBoxes.forEach(card => {
 $('.carousel').carousel({
   interval: 2000
 })
+// Read more ----- read less ============= Meryem's article's code===============
+$('.readmore-btn').on('click', function () {
+  $(this).parent().toggleClass('showContent');
+  // ======== another wat to do the if-else "conditions"
+  var replaceText = $(this).parent().hasClass('showContent') ? 'En savoir moins' : 'En savoir plus';
+  $(this).text(replaceText);
+});
+//  Offer pics animation ============================
+$(document).ready(function () {
+  defOptioned = {
+    'ext': '',
+    'count': 10,
+    'speed': 10,
+  };
+});
 
 
 
