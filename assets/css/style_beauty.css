@@ -369,7 +369,7 @@ p{
 }
 /* ======================== Special offer */
 .offer {
-  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("assets/img/offre/argan-life.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("../img/Beauty/offre/argan-life.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
